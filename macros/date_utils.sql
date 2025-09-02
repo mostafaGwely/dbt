@@ -8,3 +8,11 @@
         END    
 
 {% endmacro %}
+
+
+{% macro day_type(x)%}
+    CASE 
+            WHEN DAYOFWEEK({{x}}) IN (1, 7)  THEN 'WEEKEND'
+            ELSE 'BUSINESSDAY'
+        END  
+{% endmacro %}
