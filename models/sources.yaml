@@ -7,3 +7,5 @@ sources:
     tables:
       - name: weather      # Table in raw_data schema
         description: "weather data"
+      - name: bike      # Table in raw_data schema
+        description: "bike data"
