@@ -7,6 +7,7 @@ WITH TRIPS AS (
    left join
    {{ ref('daily_weather') }} w
    on date(t.starttime) = w.daily_weather
+
 )
 
 select
