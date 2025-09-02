@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: demo                # The source name (how you'll reference it in dbt)
+    schema: demo_schema         # The schema in your warehouse
+    database: demo      # (Optional) database name, useful in multi-db setups
+    tables:
+      - name: weather      # Table in raw_data schema
+        description: "weather data"
